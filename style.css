@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height:100%;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:white;
+    color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}  
+
+#space{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 700px;
+    width:700px;
+    border: solid;
+    padding:center;
+}
+
+
+#score{
+    font-size: 4em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#container{
+    height: 550px;
+    width:550px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    gap: 50px;
+    border:solid;
+    background-color: rgba(29, 117, 29, 0.653);
+    
+}
+
+.hole{
+    background-image: url("hole.png");
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+.hole .mole{
+    position:absolute;
+    bottom: 0px;
+    width: 120px;
+    margin-left: 15px;
+
+}
