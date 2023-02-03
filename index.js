@@ -15,17 +15,14 @@ function moleMove(){
     imgmole.setAttribute("src","mole.png");
 
     imgmole.addEventListener('click', function() {
-        console.log("click")
         score += 1
         count.textContent = score
         holechoose.removeChild(imgmole)
-        moleMove;
+        moleMove()
         })
 
     holechoose.appendChild(imgmole);
 
 }
-
-
 
 moleMove()
